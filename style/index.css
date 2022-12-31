@@ -1,0 +1,93 @@
+body {
+  background-color: rgb(242, 242, 242);
+}
+
+main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+
+.container {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.grid-container {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 10px;
+  width: 600px;
+}
+
+.grid-items {
+  display: grid;
+  padding: 20px;
+}
+.grid-items p {
+  color: white;
+  font-size: 15px;
+  font-family: "Lexend Deca", "sans-serif";
+  margin-bottom: 30%;
+}
+.grid-items h1 {
+  color: rgb(242, 242, 242);
+  font-family: "Big Shoulders Display", "sans-serif";
+  text-transform: uppercase;
+}
+.grid-items button {
+  cursor: pointer;
+  padding: 15px;
+  background-color: rgb(242, 242, 242);
+  border: none;
+  border-radius: 50px;
+  width: 80%;
+  font-family: "Lexend Deca", "sans-serif";
+  margin-bottom: 10%;
+}
+
+.grid-items:nth-child(1) {
+  background-color: rgb(227, 136, 38);
+  border-radius: 10px 0px 0px 10px;
+}
+.grid-items:nth-child(1) button {
+  color: rgb(227, 136, 38);
+}
+
+.grid-items:nth-child(2) {
+  background-color: rgb(0, 105, 112);
+}
+.grid-items:nth-child(2) button {
+  color: rgb(0, 105, 112);
+}
+
+.grid-items:nth-child(3) {
+  background-color: rgb(0, 66, 65);
+  border-radius: 0px 10px 10px 0px;
+}
+.grid-items:nth-child(3) button {
+  color: rgb(0, 66, 65);
+}
+
+@media screen and (max-width: 600px) {
+  .grid-container {
+    display: block;
+    width: 300px;
+  }
+  .grid-items:nth-child(1) {
+    border-radius: 10px 10px 0px 0px;
+  }
+  .grid-items:nth-child(3) {
+    border-radius: 0px 0px 10px 10px;
+  }
+  .grid-items p {
+    margin-bottom: 10%;
+  }
+  .grid-items button {
+    width: 60%;
+  }
+}/*# sourceMappingURL=index.css.map */
